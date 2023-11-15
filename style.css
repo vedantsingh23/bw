@@ -1,0 +1,83 @@
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply the color theme */
+:root {
+    --primary-color: #5b7c99;
+    --secondary-color: #fde74c;
+    --background-color: #e5e9ec;
+}
+
+body {
+    font-family: 'Your Chosen Font', sans-serif; /* Replace 'Your Chosen Font' with the actual font you want to use */
+    background-color: var(--background-color);
+    color: #333; /* Default text color */
+}
+
+/* Style the navbar */
+.navbar1 {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar span {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: #fff; /* Navbar link color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Style the search bar */
+.searchbar {
+    text-align: center;
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: none;
+}
+
+/* Style the main content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+/* Style the images and backstory section */
+.images img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.Backstory {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
