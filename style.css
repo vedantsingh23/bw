@@ -1,10 +1,8 @@
-/* Reset some default browser styles */
 body, h1, h2, p {
     margin: 0;
     padding: 0;
 }
 
-/* Apply the color theme */
 :root {
     --primary-color: #5b7c99;
     --secondary-color: #fde74c;
@@ -12,12 +10,116 @@ body, h1, h2, p {
 }
 
 body {
-    font-family: 'Your Chosen Font', sans-serif; /* Replace 'Your Chosen Font' with the actual font you want to use */
+    font-family: 'Your Chosen Font', sans-serif;
     background-color: var(--background-color);
-    color: #333; /* Default text color */
+    color: #333; 
 }
 
-/* Style the navbar */
+.navbar1 {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar span {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: #fff; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.searchbar {
+    text-align: center;
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.gallery-item {
+    width: 45%; 
+    margin: 10px 0;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.intro {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.intro p {
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.additional-text {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.additional-text h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.additional-text p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #5b7c99;
+    --secondary-color: #fde74c;
+    --background-color: #e5e9ec;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Your Chosen Font', sans-serif; 
+    background-color: var(--background-color);
+    color: #333; 
+    display: flex;
+    flex-direction: column;
+}
+
+
 .navbar1 {
     background-color: var(--primary-color);
     text-align: center;
@@ -40,44 +142,46 @@ body {
     font-size: 16px;
 }
 
-/* Style the search bar */
+
 .searchbar {
     text-align: center;
     margin: 10px 0;
 }
 
-input[type="text"] {
-    padding: 8px;
-    border: none;
-}
-
-/* Style the main content */
-main {
-    max-width: 800px;
-    margin: 20px auto;
-}
-
-h1 {
-    color: var(--primary-color);
-}
-
-/* Style the images and backstory section */
-.images img {
+input[type="text"], input[type="email"], textarea {
     width: 100%;
-    height: auto;
-    margin-top: 20px;
+    padding: 8px;
+    margin-bottom: 10px;
 }
 
-.Backstory {
-    margin-top: 20px;
-    text-align: justify;
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Style the footer */
-footer {
-    text-align: center;
-    padding: 10px;
+.contact-form h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+button {
     background-color: var(--primary-color);
     color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 }
 
+button:hover {
+    background-color: var(--secondary-color);
+}
